@@ -56,7 +56,7 @@ h2 {
 
 header {
   height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(left), color-stop(rgba(58, 58, 58, 0.55)), to(rgba(58, 58, 58, 0.55))), url("../img/header_bg.jpg") no-repeat center top;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(58, 58, 58, 0.55)), to(rgba(58, 58, 58, 0.55))), url("../img/header_bg.jpg") no-repeat center top;
   background: -webkit-linear-gradient(left, rgba(58, 58, 58, 0.55), rgba(58, 58, 58, 0.55)), url("../img/header_bg.jpg") no-repeat center top;
   background: -o-linear-gradient(left, rgba(58, 58, 58, 0.55), rgba(58, 58, 58, 0.55)), url("../img/header_bg.jpg") no-repeat center top;
   background: linear-gradient(left, rgba(58, 58, 58, 0.55), rgba(58, 58, 58, 0.55)), url("../img/header_bg.jpg") no-repeat center top;
@@ -245,6 +245,33 @@ h2 {
     padding: 30px 0; }
   .fourth-section .read-more {
     margin: 40px 0; }
+
+.fifth-section {
+  padding: 92px 0 92px 50%;
+  background: url("../img/fifth_section_bg.jpg") no-repeat left 92px, #2f2f2f; }
+  .fifth-section h4 {
+    font: 48px Lato Black;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0 0 50px 70px; }
+    .fifth-section h4 span {
+      color: #fba419; }
+  .fifth-section li {
+    font: 16px/24px Lato Light, sans-serif;
+    color: #bfbfbf;
+    padding: 0 236px 42px; }
+    .fifth-section li:first-of-type {
+      background: url("../img/icons.png") no-repeat 66px 0; }
+    .fifth-section li:nth-of-type(2) {
+      background: url("../img/icons.png") no-repeat 66px -176px; }
+    .fifth-section li:last-of-type {
+      padding-bottom: 0;
+      background: url("../img/icons.png") no-repeat 66px -348px; }
+    .fifth-section li h6 {
+      font: 17px Lato Black, sans-serif;
+      color: #fff;
+      text-transform: uppercase;
+      padding-bottom: 12px; }
 
 @media screen and (max-width: 800px) {
   header h1 {
