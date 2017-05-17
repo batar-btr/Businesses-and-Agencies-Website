@@ -35,7 +35,8 @@
   font-style: normal; }
 
 body {
-  background-color: black; }
+  background-color: black;
+  font: normal 62.5% Lato, sans serif; }
 
 a {
   text-decoration: none; }
@@ -272,6 +273,75 @@ h2 {
       color: #fff;
       text-transform: uppercase;
       padding-bottom: 12px; }
+
+.six-section {
+  padding: 92px 0;
+  background: url("../img/sixth_section_bg.jpg") no-repeat right center, #fff;
+  -webkit-background-size: auto 100%;
+          background-size: auto 100%; }
+  .six-section::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .six-section h4 {
+    font: 48px Lato Black, sans-serif;
+    text-transform: uppercase; }
+    .six-section h4 span {
+      color: #fba419; }
+
+.six-section-col1 {
+  float: left;
+  width: 36.6875%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-right: 90px;
+  text-align: right; }
+  .six-section-col1 p {
+    font-size: 2.4em;
+    padding: 40px 0 40px 43.86317907444668%; }
+    .six-section-col1 p span {
+      font-family: Lato Light; }
+
+.six-section-col2 {
+  float: left;
+  width: 57.125%;
+  height: 100%;
+  background-color: #2f2f2f;
+  color: white;
+  text-align: center;
+  padding: 50px 0; }
+  .six-section-col2 li {
+    display: inline-block;
+    vertical-align: top;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 41.13785557986871%;
+    padding: 19px 0; }
+    .six-section-col2 li:nth-of-type(3) span {
+      background: url("../img/six_section_sprite.png") center -86px no-repeat border-box; }
+    .six-section-col2 li:last-of-type span {
+      background: url("../img/six_section_sprite.png") center -172px no-repeat border-box; }
+    .six-section-col2 li span {
+      display: inline-block;
+      width: 86px;
+      height: 86px;
+      border: 3px solid white;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      -webkit-border-radius: 43px;
+              border-radius: 43px;
+      margin-bottom: 26px;
+      background: url("../img/six_section_sprite.png") center top no-repeat border-box; }
+    .six-section-col2 li p {
+      padding: 0 10%;
+      color: #bfbfbf;
+      font-size: 1.6em;
+      line-height: 24px; }
+    .six-section-col2 li h6 {
+      font: 1.7em Lato Black, sans-serif;
+      color: #fba419;
+      text-transform: uppercase;
+      padding-bottom: 10px; }
 
 @media screen and (max-width: 800px) {
   header h1 {
