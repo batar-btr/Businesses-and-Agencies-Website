@@ -60,7 +60,7 @@ header {
   background: -webkit-gradient(linear, left top, right top, from(rgba(58, 58, 58, 0.55)), to(rgba(58, 58, 58, 0.55))), url("../img/header_bg.jpg") no-repeat center top;
   background: -webkit-linear-gradient(left, rgba(58, 58, 58, 0.55), rgba(58, 58, 58, 0.55)), url("../img/header_bg.jpg") no-repeat center top;
   background: -o-linear-gradient(left, rgba(58, 58, 58, 0.55), rgba(58, 58, 58, 0.55)), url("../img/header_bg.jpg") no-repeat center top;
-  background: linear-gradient(left, rgba(58, 58, 58, 0.55), rgba(58, 58, 58, 0.55)), url("../img/header_bg.jpg") no-repeat center top;
+  background: linear-gradient(to right, rgba(58, 58, 58, 0.55), rgba(58, 58, 58, 0.55)), url("../img/header_bg.jpg") no-repeat center top;
   position: relative;
   text-align: center;
   overflow: hidden; }
@@ -168,7 +168,7 @@ header {
     width: 480px;
     height: 480px;
     position: absolute;
-    border: 16px solid red;
+    border: 16px solid #fba419;
     left: 50%;
     top: -240px;
     margin-left: -240px;
@@ -193,7 +193,7 @@ header {
   text-align: center;
   font: bold 20px/20px Lato,sans-serif;
   padding: 15px 32px;
-  background-color: green;
+  background-color: #fba419;
   -webkit-border-radius: 25px;
           border-radius: 25px;
   color: #fff;
