@@ -57,7 +57,7 @@ h2 {
 
 header {
   height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(left), color-stop(rgba(58, 58, 58, 0.55)), to(rgba(58, 58, 58, 0.55))), url("../img/header_bg.jpg") no-repeat center top;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(58, 58, 58, 0.55)), to(rgba(58, 58, 58, 0.55))), url("../img/header_bg.jpg") no-repeat center top;
   background: -webkit-linear-gradient(left, rgba(58, 58, 58, 0.55), rgba(58, 58, 58, 0.55)), url("../img/header_bg.jpg") no-repeat center top;
   background: -o-linear-gradient(left, rgba(58, 58, 58, 0.55), rgba(58, 58, 58, 0.55)), url("../img/header_bg.jpg") no-repeat center top;
   background: linear-gradient(left, rgba(58, 58, 58, 0.55), rgba(58, 58, 58, 0.55)), url("../img/header_bg.jpg") no-repeat center top;
