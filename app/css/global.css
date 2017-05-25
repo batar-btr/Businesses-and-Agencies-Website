@@ -68,9 +68,44 @@ header {
     position: relative;
     overflow: hidden;
     margin: 0 60px;
-    z-index: 2; }
+    z-index: 2;
+    opacity: 1;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s; }
+    @media (max-width: 1320px) {
+      header .navbar {
+        margin: 0; } }
+    @media (max-width: 480px) {
+      header .navbar {
+        position: absolute;
+        width: 100%; } }
     header .navbar li {
-      padding: 34px 16px 0; }
+      padding: 34px 16px 0;
+      float: left;
+      opacity: 1;
+      -webkit-transition: all 1s;
+      -o-transition: all 1s;
+      transition: all 1s; }
+      @media (max-width: 1320px) {
+        header .navbar li {
+          width: 16.6%;
+          padding-left: 0;
+          padding-right: 0; } }
+      @media (max-width: 480px) {
+        header .navbar li {
+          width: 100%;
+          background-color: rgba(1, 1, 1, 0.7);
+          padding-bottom: 34px;
+          margin-bottom: 2px;
+          -webkit-transform: translateX(-100%);
+              -ms-transform: translateX(-100%);
+                  transform: translateX(-100%); } }
+      header .navbar li.fr {
+        float: right; }
+        @media (max-width: 1320px) {
+          header .navbar li.fr {
+            float: left; } }
   header .icon-bar {
     font-size: 0;
     padding: 28px;
@@ -145,10 +180,17 @@ header {
     color: #fff;
     font: 24px Lato Light, sans-serif; }
   header .read-more {
-    margin-top: 20px; }
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 40px; }
 
 .read-more {
   display: inline-block;
+  width: 120px;
+  text-align: center;
   font: bold 20px/20px Lato,sans-serif;
   padding: 15px 32px;
   background-color: #fba419;
@@ -156,6 +198,16 @@ header {
           border-radius: 25px;
   color: #fff;
   text-transform: uppercase; }
+
+.burger {
+  position: fixed;
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  top: 0;
+  right: 0;
+  z-index: 5; }
 
 .second-section {
   background: url("../img/second_section_bg.jpg") no-repeat top right;

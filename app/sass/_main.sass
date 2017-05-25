@@ -30,8 +30,33 @@ header
         overflow: hidden
         margin: 0 60px
         z-index: 2
+        opacity: 1
+        transition: all 1s
+        @media (max-width: 1320px)
+            margin: 0
+        @media (max-width: 480px)
+            position: absolute
+            width: 100%
         li 
-          padding: 34px 16px 0
+            padding: 34px 16px 0
+            float: left
+            opacity: 1
+            transition: all 1s
+            @media (max-width: 1320px)
+                width: 16.6%
+                padding-left: 0
+                padding-right: 0
+            @media (max-width: 480px)
+                width: 100%
+                background-color: rgba(1, 1, 1, 0.7)
+                padding-bottom: 34px
+                margin-bottom: 2px
+                transform: translateX(-100%)
+            &.fr
+                float: right
+                @media (max-width: 1320px)
+                    float: left
+          
     .icon-bar
         font-size: 0
         padding: 28px
@@ -106,9 +131,16 @@ header
         color: #fff
         font: 24px Lato Light, sans-serif
     .read-more
-        margin-top: 20px
+        position: absolute
+        margin: auto
+        left: 0
+        right: 0
+        bottom: 0
+        margin-bottom: 40px
 .read-more
     display: inline-block
+    width: 120px
+    text-align: center
     font: bold 20px/20px Lato,sans-serif
     padding: 15px 32px
     background-color: $orange
@@ -116,3 +148,12 @@ header
     color: #fff
     text-transform: uppercase
     
+.burger
+    position: fixed
+    display: block
+    width: 100px
+    height: 100px
+    background-color: #fff
+    top: 0
+    right: 0
+    z-index: 5
