@@ -8,6 +8,7 @@ a
 .wrapper
     max-width: 1600px
     margin: 0 auto
+    overflow: hidden
 
 .fl
     float: left
@@ -35,18 +36,20 @@ header
         @media (max-width: 1320px)
             margin: 0
         @media (max-width: 480px)
-            position: absolute
+            position: fixed
+            margin-top: 64px
             width: 100%
         li 
             padding: 34px 16px 0
             float: left
-            opacity: 1
             transition: all 1s
+            
             @media (max-width: 1320px)
                 width: 16.6%
                 padding-left: 0
                 padding-right: 0
             @media (max-width: 480px)
+                opacity: 0
                 width: 100%
                 background-color: rgba(1, 1, 1, 0.7)
                 padding-bottom: 34px
@@ -126,6 +129,8 @@ header
         top: -240px
         margin-left: -240px
         transform: rotate(45deg)
+        @media screen and (max-width: 480px)
+            display: none
     p
         margin: 50px 24.875%
         color: #fff
@@ -149,11 +154,10 @@ header
     text-transform: uppercase
     
 .burger
-    position: fixed
-    display: block
-    width: 100px
-    height: 100px
-    background-color: #fff
-    top: 0
-    right: 0
-    z-index: 5
+    float: right
+    padding: 0 16px
+    font-size: 36px
+    line-height: 60px
+    color: #fff
+    cursor: pointer
+    display: none

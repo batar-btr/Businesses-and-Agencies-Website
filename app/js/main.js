@@ -27,6 +27,8 @@ function showNav() {
             listItems[i].style.transform = "translateX(0)";
         }
     }
+    
+    setTimeout(alert('hello'),2000);
 }
 
 burgerBtn.addEventListener('click', showNav);

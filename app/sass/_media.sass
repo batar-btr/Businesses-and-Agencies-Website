@@ -1,3 +1,29 @@
 @media screen and (max-width: 800px)
     header h1
         color: $orange
+        
+@media screen and (max-width: 480px)
+    .top-bar
+        position: fixed
+        top: 0
+        width: 100%
+        background-color: rgba(1, 1, 1, 0.6)
+        z-index: 2
+        h3
+            font-size: 40px
+            line-height: 60px
+            letter-spacing: normal
+            text-align: left
+            padding-left: 10px
+            float: left
+            span
+                font-size: 40px
+    header .icon-bar
+        margin-top: 60px
+        &::after
+            width: 100%
+            left: 0
+            margin: 0
+            background-color: $orange
+    .burger
+        display: block

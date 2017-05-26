@@ -43,7 +43,8 @@ a {
 
 .wrapper {
   max-width: 1600px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  overflow: hidden; }
 
 .fl {
   float: left; }
@@ -78,12 +79,12 @@ header {
         margin: 0; } }
     @media (max-width: 480px) {
       header .navbar {
-        position: absolute;
+        position: fixed;
+        margin-top: 64px;
         width: 100%; } }
     header .navbar li {
       padding: 34px 16px 0;
       float: left;
-      opacity: 1;
       -webkit-transition: all 1s;
       -o-transition: all 1s;
       transition: all 1s; }
@@ -94,6 +95,7 @@ header {
           padding-right: 0; } }
       @media (max-width: 480px) {
         header .navbar li {
+          opacity: 0;
           width: 100%;
           background-color: rgba(1, 1, 1, 0.7);
           padding-bottom: 34px;
@@ -175,6 +177,9 @@ header {
     -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
             transform: rotate(45deg); }
+    @media screen and (max-width: 480px) {
+      header .square {
+        display: none; } }
   header p {
     margin: 50px 24.875%;
     color: #fff;
@@ -200,14 +205,13 @@ header {
   text-transform: uppercase; }
 
 .burger {
-  position: fixed;
-  display: block;
-  width: 100px;
-  height: 100px;
-  background-color: #fff;
-  top: 0;
-  right: 0;
-  z-index: 5; }
+  float: right;
+  padding: 0 16px;
+  font-size: 36px;
+  line-height: 60px;
+  color: #fff;
+  cursor: pointer;
+  display: none; }
 
 .second-section {
   background: url("../img/second_section_bg.jpg") no-repeat top right;
@@ -562,3 +566,29 @@ header {
 @media screen and (max-width: 800px) {
   header h1 {
     color: #fba419; } }
+
+@media screen and (max-width: 480px) {
+  .top-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(1, 1, 1, 0.6);
+    z-index: 2; }
+    .top-bar h3 {
+      font-size: 40px;
+      line-height: 60px;
+      letter-spacing: normal;
+      text-align: left;
+      padding-left: 10px;
+      float: left; }
+      .top-bar h3 span {
+        font-size: 40px; }
+  header .icon-bar {
+    margin-top: 60px; }
+    header .icon-bar::after {
+      width: 100%;
+      left: 0;
+      margin: 0;
+      background-color: #fba419; }
+  .burger {
+    display: block; } }
