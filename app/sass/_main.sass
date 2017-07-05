@@ -28,17 +28,21 @@ header
     
     .navbar
         position: relative
-        overflow: hidden
         margin: 0 60px
         z-index: 2
         opacity: 1
         transition: all 1s
+        &::after
+            content: ""
+            display: table
+            clear: both
         @media (max-width: 1320px)
             margin: 0
         @media (max-width: 480px)
             position: fixed
             margin-top: 64px
             width: 100%
+            left: -100%
         li 
             padding: 34px 16px 0
             float: left

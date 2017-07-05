@@ -67,13 +67,16 @@ header {
   overflow: hidden; }
   header .navbar {
     position: relative;
-    overflow: hidden;
     margin: 0 60px;
     z-index: 2;
     opacity: 1;
     -webkit-transition: all 1s;
     -o-transition: all 1s;
     transition: all 1s; }
+    header .navbar::after {
+      content: "";
+      display: table;
+      clear: both; }
     @media (max-width: 1320px) {
       header .navbar {
         margin: 0; } }
@@ -81,7 +84,8 @@ header {
       header .navbar {
         position: fixed;
         margin-top: 64px;
-        width: 100%; } }
+        width: 100%;
+        left: -100%; } }
     header .navbar li {
       padding: 34px 16px 0;
       float: left;
@@ -563,9 +567,27 @@ header {
               transform: rotate(45deg);
       margin-bottom: -300px; }
 
-@media screen and (max-width: 800px) {
-  header h1 {
-    color: #fba419; } }
+@media screen and (max-width: 960px) {
+  .third-section .team-info {
+    width: 100%;
+    margin: 0;
+    padding-bottom: 44px; }
+    .third-section .team-info p {
+      padding: 44px; }
+    .third-section .team-info h2 {
+      margin-left: 44px; }
+    .third-section .team-info .read-more {
+      display: block;
+      margin: 0 auto; }
+  .third-section .team-cards {
+    width: 100%; } }
+
+@media screen and (max-width: 588px) {
+  .third-section .team-cards figure {
+    width: 40%;
+    padding: 5%; }
+    .third-section .team-cards figure img {
+      max-width: 100%; } }
 
 @media screen and (max-width: 480px) {
   .top-bar {
@@ -591,4 +613,22 @@ header {
       margin: 0;
       background-color: #fba419; }
   .burger {
-    display: block; } }
+    display: block; }
+  header h1 {
+    margin-top: -15px; }
+  header p {
+    margin: 50px 10px; }
+  .second-section {
+    background: white;
+    padding: 44px 0; }
+    .second-section h2 {
+      margin: 0 44px;
+      padding-bottom: 18px;
+      font-size: 45px; }
+    .second-section p {
+      margin: 0;
+      width: auto;
+      padding: 44px;
+      font-size: 16px; }
+    .second-section .read-more {
+      margin-left: 44px; } }
