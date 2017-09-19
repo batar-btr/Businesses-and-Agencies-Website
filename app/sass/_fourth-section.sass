@@ -1,16 +1,31 @@
 .fourth-section
-    padding: 92px 13.625%
+    padding: 62px 13.625%
     background-color: #fff
     background: url('../img/fourth_section_bg.jpg') no-repeat right 62px, white
-    h4
-        font: 48px Lato Black, sans-serif
-        text-transform: uppercase
-        span
-            color: $orange
-    p
-        width: 29%
-        font: 17px/30px Lato, sans-serif
-        color: rgb(70, 70, 70)
+    @media screen
+        @media (max-width: 1400px)
+            background: linear-gradient(to left, transparent, transparent 340px, white 340px, white) ,url('../img/fourth_section_bg.jpg') no-repeat right 62px, white
+        @media (max-width: 700px)
+            background: white
+    .fourth-section-wrap
         padding: 30px 0
-    .read-more
-        margin: 40px 0
+        width: 29%
+        @media screen
+            @media (max-width: 1400px)
+                background-color: #fff
+                width: 50%
+                padding: 0
+            @media (max-width: 700px)
+                width: 100%
+        h4
+            font: 48px Lato Black, sans-serif
+            text-transform: uppercase
+            span
+                color: $orange
+        p
+            font: 17px/30px Lato, sans-serif
+            color: rgb(70, 70, 70)
+            padding: 30px 0
+            
+        .read-more
+            margin: 40px 0

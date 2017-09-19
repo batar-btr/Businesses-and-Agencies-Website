@@ -11,10 +11,12 @@ var gulp       = require('gulp'), // Подключаем Gulp
     cache        = require('gulp-cache'), // Подключаем библиотеку кеширования
     autoprefixer = require('gulp-autoprefixer'),
     mqpacker     = require('css-mqpacker'),
+    wait         = require('gulp-wait'),
     postcss      = require('gulp-postcss');// Подключаем библиотеку для автоматического добавления префиксов
 
 gulp.task('sass', function(){ // Создаем таск Sass
-    return gulp.src('app/sass/**/*.sass') // Берем источник
+    return gulp.src('app/sass/**/*.sass')
+        .pipe(wait(500)) // Берем источник
         .pipe(sass()) // Преобразуем Sass в CSS посредством gulp-sass
         .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы
         .pipe(gulp.dest('app/css')) // Выгружаем результата в папку app/css
@@ -99,7 +101,7 @@ gulp.task('mq', function(){
     gulp.src('dist/css/global.css')
         .pipe(postcss([mqpacker]))
         .pipe(gulp.dest('dist/test'));
-})
+});
 
 
 var reporter    = require('postcss-reporter');

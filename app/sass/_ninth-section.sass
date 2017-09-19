@@ -1,5 +1,5 @@
 .ninth-section
-    padding: 100px 215px 358px
+    padding: 100px 0 358px
     background-color: #2f2f2f
     text-align: center
     color: white
@@ -9,18 +9,25 @@
         font-size: 0
         li
             display: inline-block
-            width: 20.5%
-            padding-left: 12.5%
+            width: 30%
+            box-sizing: border-box
+            padding-left: 76px
             height: 100px
             font-size: 16px
             text-align: left
             vertical-align: top
+            @media screen and (max-width: 760px)
+                width: 60%
+                margin: 0 20% 20px
+            @media screen and (max-width: 480px)
+                width: 90%
+                margin: 0 5% 20px
             &:first-of-type
-                background: url('../img/mail.png') 21% top no-repeat
+                background: url('../img/mail.png') 10px top no-repeat
             &:nth-of-type(2)
-                background: url('../img/phone.png') 21% top no-repeat
+                background: url('../img/phone.png') 10px top no-repeat
             &:last-of-type
-                background: url('../img/map.png') 21% top no-repeat
+                background: url('../img/map.png') 10px top no-repeat
             
             h6
                 text-transform: uppercase
