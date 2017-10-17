@@ -222,22 +222,38 @@ header {
 
 .second-section {
   background: url("../img/second_section_bg.jpg") no-repeat top right;
-  padding: 88px 0;
+  padding: 88px 218px;
   background-color: #fff; }
+  @media screen and (max-width: 1520px) {
+    .second-section {
+      background: -webkit-gradient(linear, left bottom, left top, from(rgba(1, 1, 1, 0.7)), to(rgba(1, 1, 1, 0.7))), url("../img/second_section_bg.jpg") no-repeat top right;
+      background: -webkit-linear-gradient(bottom, rgba(1, 1, 1, 0.7), rgba(1, 1, 1, 0.7)), url("../img/second_section_bg.jpg") no-repeat top right;
+      background: -o-linear-gradient(bottom, rgba(1, 1, 1, 0.7), rgba(1, 1, 1, 0.7)), url("../img/second_section_bg.jpg") no-repeat top right;
+      background: linear-gradient(to top, rgba(1, 1, 1, 0.7), rgba(1, 1, 1, 0.7)), url("../img/second_section_bg.jpg") no-repeat top right;
+      background-color: white; } }
+  @media screen and (max-width: 960px) {
+    .second-section {
+      padding: 88px 44px; } }
   .second-section p {
     width: 25%;
     padding: 40px 0;
-    margin-left: 218px;
     font: 24px Lato Light;
     color: black; }
+    @media screen and (max-width: 1520px) {
+      .second-section p {
+        color: white;
+        width: 70%; } }
+    @media screen and (max-width: 640px) {
+      .second-section p {
+        width: 100%; } }
     .second-section p span {
       font-family: Lato; }
-  .second-section .read-more {
-    margin-left: 218px; }
   .second-section h2 {
-    margin: 0 218px;
     position: relative;
     padding-bottom: 36px; }
+    @media screen and (max-width: 1520px) and (min-width: 480px) {
+      .second-section h2 {
+        color: white; } }
     .second-section h2 span {
       color: orange; }
     .second-section h2::after {
@@ -768,6 +784,7 @@ header {
       margin: 0;
       width: auto;
       padding: 44px;
-      font-size: 16px; }
+      font-size: 16px;
+      color: black; }
     .second-section .read-more {
       margin-left: 44px; } }
